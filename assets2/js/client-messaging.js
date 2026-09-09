@@ -1,0 +1,9 @@
+const internalCommunications = communications;
+
+communications = function () {
+  if (state.profile !== 'Cliente') return internalCommunications();
+
+  return `${header('Comunicación y autoservicio', 'Mensajes y asistencia', 'Consultá tu información y conversá directamente con tu equipo asesor.')}<div class="conversation-tabs"><button class="active">Mensajes</button><button data-toast="Vista demo: consultas sobre información autorizada">Consultas IA</button></div><div class="conversation-layout client-conversation"><article class="card conversation"><div class="conversation-head"><div><div class="eyebrow">Tu conversación con Dahlgren y Asociados</div><b>Consulta sobre retención de IVA</b></div><span class="badge warn">EN REVISIÓN</span></div><div class="message user">Hola, veo una retención de IVA en el resumen. ¿Podrían indicarme a qué corresponde?</div><div class="message bot"><div class="eyebrow">Respuesta sugerida por IA · confianza 92%</div>La retención registrada corresponde al comprobante emitido por Servicios del Plata el 28/08. La información coincide con el certificado disponible.<br><br><small>La respuesta se prepara con fuentes autorizadas y queda lista para la revisión del asesor.</small></div><div class="message advisor"><b>Mariana López</b><br>Revisando la información asociada para responderte.</div><div class="chat-composer"><input placeholder="Escribí tu mensaje o consulta…"><button class="primary" data-toast="Mensaje enviado al estudio">Enviar</button></div></article><aside class="conversation-context"><div class="eyebrow">Información de tu consulta</div><b>Información utilizada</b><span>Documento: Certificado retención IVA</span><span>Período: Agosto 2026</span><span>Asesor asignado: Mariana López</span></aside></div>`;
+};
+
+if (state.page === 'comunicaciones') app();
