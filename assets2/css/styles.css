@@ -21,3 +21,26 @@ body .conversation-layout.client-conversation{grid-template-columns:minmax(0,1fr
 
 /* Refinamientos de navegación y header */
 body .sidebar .nav button::after{display:none!important}.agent-nav>i{display:none!important}.topbar .header-notices{font-size:11px;white-space:nowrap}.topbar .avatar{display:grid!important;place-items:center;width:38px!important;height:38px!important;min-width:38px;border-radius:50%!important;overflow:hidden;line-height:1;flex:0 0 38px;padding:0}
+
+
+/* Buscador IA destacado por área */
+.area-ai-search{margin-bottom:18px;padding:20px 22px;border:1px solid #b9ddd6;border-radius:13px;background:linear-gradient(120deg,#f4fbf9 0%,#e3f2ef 100%);box-shadow:0 8px 24px rgba(18,55,70,.08)}
+.area-ai-copy{display:flex;align-items:center;gap:13px;margin-bottom:14px}
+.area-ai-icon{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border-radius:11px;background:var(--teal);color:#fff;font-size:20px}
+.area-ai-copy h3{margin:2px 0 3px;font:600 21px 'Playfair Display';color:var(--navy)}
+.area-ai-copy p{margin:0;color:var(--muted);font-size:12px}
+.area-ai-input{display:grid;grid-template-columns:minmax(0,1fr) 44px auto;gap:8px}
+.area-ai-input input{width:100%;min-width:0;padding:13px 15px;border:1px solid #b7d5cf;border-radius:9px;background:#fff;color:var(--ink);font:500 13px 'DM Sans',sans-serif;outline:none}
+.area-ai-input input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,118,110,.1)}
+.voice-search{display:grid;place-items:center;border:1px solid #b7d5cf;border-radius:9px;background:#fff;color:var(--teal);font-size:18px}
+.voice-search:hover{background:#edf7f5}
+.area-ai-suggestions{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.area-ai-suggestions button{padding:6px 9px;border:1px solid #c5ded9;border-radius:999px;background:rgba(255,255,255,.72);color:var(--teal);font-size:10px;font-weight:700}
+.area-ai-suggestions button:hover{border-color:var(--teal);background:#fff}
+@media(max-width:720px){
+  .area-ai-search{padding:17px}
+  .area-ai-input{grid-template-columns:minmax(0,1fr) 42px}
+  .area-ai-input .primary{grid-column:1/-1;width:100%}
+  .area-ai-suggestions{overflow:auto;flex-wrap:nowrap;padding-bottom:3px}
+  .area-ai-suggestions button{flex:0 0 auto}
+}
