@@ -1,0 +1,6 @@
+/* Áreas internas visibles según el perfil, sin convertirlas en asistentes separados. */
+.evo-area-menu{margin:10px 0 6px;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.evo-area-menu summary{display:flex;justify-content:space-between;align-items:center;padding:12px 11px 8px;color:#c8d0dc;cursor:pointer;font-size:10px;font-weight:700;letter-spacing:1px;list-style:none}
+.evo-area-menu summary::-webkit-details-marker{display:none}.evo-area-menu summary i{font-style:normal;font-size:14px}.evo-area-menu[open] summary i{transform:rotate(180deg)}
+.evo-area-menu button{padding:7px 11px!important;color:#d9dce0!important;font-size:11px!important}.evo-area-menu button span{display:inline-block;width:14px;color:#b99859;font-size:14px}.evo-area-menu button.active,.evo-area-menu button:hover{background:rgba(185,152,89,.18)!important;color:#fff!important}
+.evo-client-nav{padding-top:4px}@media(max-width:720px){.evo-area-menu{display:none}.evo-client-nav button{display:block!important}}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dahlgren | Mapa de transformación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/mapa-transformacion.css">
+  <link rel="stylesheet" href="assets/css/mapa-transformacion-manual.css">
+  <link rel="stylesheet" href="assets/css/mapa-transformacion-monitor.css">
+  <link rel="stylesheet" href="assets/css/mapa-transformacion-demo.css">
+  <link rel="stylesheet" href="assets/css/mapa-transformacion-transfer.css">
+  <link rel="stylesheet" href="assets/css/mapa-transformacion-progresivo.css">
+  <link rel="stylesheet" href="assets/css/mapa-transformacion-fixes.css">
+</head>
+<body>
+  <header class="map-header"><a class="brand" href="index.html"><img src="logo-bg-blue.png" alt="Dahlgren"></a><span class="header-label">Mapa de transformación</span><a class="back-link" href="index.html">Siguiente: presentación →</a></header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">VISIÓN DE IMPLEMENTACIÓN</p><h1>Una plataforma central que crece <em>con cada capacidad conectada.</em></h1><p>Los sistemas actuales no desaparecen de un día para otro: Dahlgren los conecta, ordena la información y reemplaza sólo lo que conviene.</p></div>
+      <div class="controls"><section class="compact-progress" aria-label="Progreso de transformación"><div><span>TRANSFORMACIÓN DAHLGREN</span><b id="global-progress">0%</b></div><div class="progress-track"><i id="progress-bar"></i></div><div class="progress-meta"><span id="capacity-count">0 capacidades</span><span id="source-count">0 fuentes</span><span id="stage-label">Base inicial</span></div></section><button class="button secondary" id="reset-demo">Reiniciar demostración</button><small>Demo visual · sin integraciones reales</small></div>
+    </section>
+    <section class="map-layout">
+      <article class="source-workspace"><div id="source-tabs" class="source-tabs" aria-label="Fuentes actuales"></div><div id="source-detail" class="source-detail" aria-live="polite"></div></article>
+      <div class="flow-arrow" aria-hidden="true">→</div>
+      <section class="dahlgren-stack"><div class="platform-zone"><div id="platform-core" class="platform-core" tabindex="0" role="region" aria-label="Dahlgren Platform, zona de incorporación"><img src="isotipo.png" alt="Dahlgren Platform"><div class="core-pulse"></div></div><div><b>Dahlgren Platform</b><small id="core-status" class="core-status">Esperando módulos</small></div></div><article class="platform-modules"><div><span id="platform-module-label">INCORPORADO EN DAHLGREN</span><small id="platform-module-count">Aún no hay módulos incorporados</small></div><div id="platform-modules-list" class="platform-modules-list"></div></article><article class="database"><div class="database-top"><span>BASE DE DATOS</span><b>Dahlgren</b><small id="database-level">Base inicial</small></div><div id="data-chips" class="data-categories"><span class="empty-chip">La base se enriquece al incorporar módulos.</span></div></article></section>
+    </section>
+    <section class="principle"><span>CONECTAR</span><i>→</i><span>CENTRALIZAR</span><i>→</i><span>ESTRUCTURAR</span><i>→</i><span>AUTOMATIZAR</span><i>→</i><strong>REEMPLAZAR CUANDO CONVENGA</strong></section>
+    <section class="closing"><div><p class="eyebrow">EL RESULTADO</p><h2>Cada integración enriquece la base de conocimiento de Dahlgren.</h2><p>Cuanto más conectada y estructurada está la información, mayor es la capacidad de anticipar, automatizar y decidir.</p></div><a id="explore-platform" class="button primary" href="index.html" aria-disabled="false">Continuar a la presentación →</a></section>
+  </main>
+  <div id="toast" role="status"></div>
+  <script src="assets/js/mapa-transformacion.js"></script>
+  <script src="assets/js/mapa-flow.js"></script>
+</body>
+</html>

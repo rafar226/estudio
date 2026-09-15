@@ -1,6 +1,6 @@
 # Memoria — Presentación estratégica Dahlgren
 
-Última actualización: 12/09/2026
+Última actualización: 14/09/2026
 
 ## Estado actual
 
@@ -36,3 +36,19 @@
 - `node --check assets/js/presentation.js` correcto.
 - `node --check assets/js/header-menu.js` correcto.
 - `git diff --check` correcto.
+
+## Evolución de la maqueta funcional
+
+- `index2.html` continúa siendo la maqueta funcional principal; se conserva el trabajo previo y sus áreas internas.
+- Se agregó una capa de navegación para presentar: **Estudio / Dirección**, **Grupos y Entidades**, **Atención / Tareas**, **Documentos** y **Administración**.
+- El modelo demostrativo sigue el recorrido: Grupo Cliente → Entidades → Área → Obligación/Proceso → Período → Información y documentos.
+- El Agente Dahlgren es único para el usuario. El chat flotante contextual está disponible en toda la maqueta; los agentes/áreas Fiscal, Laboral, etc. son espacios internos de trabajo, no asistentes separados.
+- Perfiles: Socio/Administrador ve todas las áreas; Empleado/Contador ve áreas operativas; Asesor Financiero ve el subconjunto financiero; Cliente mantiene un portal restringido.
+- Los indicadores e integraciones de SARF, Account, OneDrive y ARCA son explícitamente demostrativos; no comunicar sincronización ni automatización real.
+- Paleta vigente de la maqueta: azul noche `#081537`, azul pizarra `#30486d` y neutros. Evitar retornos a verde/menta.
+- Archivos de esta capa: `assets2/js/evolucion-maqueta.js`, `assets2/css/evolucion-maqueta.css`, `assets2/css/chat-flotante.css`, `assets2/css/chat-limpio.css`, `assets2/css/chat-dahlgren-theme.css` y `assets2/css/navegacion-perfiles.css`.
+
+## Próximo recurso independiente
+
+- `mapa-transformacion.html` será una introducción conceptual previa a la maqueta funcional.
+- Debe explicar la incorporación progresiva de capacidades y no afirmar integraciones reales.
