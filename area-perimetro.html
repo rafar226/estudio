@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Área y perímetro para primaria: conceptos, fórmulas y ejercicios.">
+    <meta name="theme-color" content="#5b4bdb">
+    <title>MateMundo — Área y perímetro</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="area-page">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="MateMundo, todos los temas"><span class="brand-mark" aria-hidden="true">M</span><span>MateMundo</span></a>
+      <nav aria-label="Navegación de área y perímetro">
+        <a class="nav-button nav-link" href="index.html">Todos los temas</a>
+        <a class="nav-button nav-link active" href="#conceptos">Conceptos</a>
+        <a class="nav-button nav-link" href="#formulas">Fórmulas</a>
+        <a class="nav-button nav-link" href="#practica-area">Practicar</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="area-hero">
+        <div>
+          <p class="eyebrow">Medir figuras</p>
+          <h1>El borde y el espacio de una <span>figura</span></h1>
+          <p>El perímetro nos dice cuánto mide el contorno. El área nos dice cuánto espacio ocupa la superficie. Aprendé a distinguirlos y a calcularlos.</p>
+          <a class="button primary button-link" href="#conceptos">Empezar por los conceptos</a>
+        </div>
+        <div class="area-hero-grid" aria-label="Rectángulo dividido en cuadrados, con su borde resaltado">
+          <div class="area-grid-cells" aria-hidden="true"></div>
+          <span class="area-label inside-label">Área<br><strong>24</strong> cuadrados</span>
+          <span class="area-label border-label">Perímetro = borde</span>
+        </div>
+      </section>
+
+      <section class="area-content-section" id="conceptos" aria-labelledby="concept-title">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">La diferencia más importante</p>
+          <h2 id="concept-title">¿Área o perímetro?</h2>
+          <p>Antes de usar una fórmula, preguntate si necesitás medir el borde o la parte de adentro.</p>
+        </div>
+        <div class="concept-pair">
+          <article class="concept-card perimeter-concept">
+            <div class="concept-icon" aria-hidden="true"><span class="outline-box"></span></div>
+            <div><span class="concept-number">01</span><h3>Perímetro</h3><p>Es la suma de todos los lados de una figura. Mide su <strong>contorno</strong>.</p><div class="concept-example">Ejemplo: metros de alambre para cercar un jardín.</div><strong class="unit-example">Se expresa en cm, m, km…</strong></div>
+          </article>
+          <article class="concept-card area-concept">
+            <div class="concept-icon" aria-hidden="true"><span class="filled-box"></span></div>
+            <div><span class="concept-number">02</span><h3>Área</h3><p>Es la medida de la superficie que ocupa una figura: toda la parte de <strong>adentro</strong>.</p><div class="concept-example">Ejemplo: baldosas necesarias para cubrir un piso.</div><strong class="unit-example">Se expresa en cm², m², km²…</strong></div>
+          </article>
+        </div>
+        <div class="memory-comparison"><span aria-hidden="true">🧠</span><p><strong>Ayuda memoria:</strong> si rodeás la figura, calculás el <b>perímetro</b>. Si la rellenás, calculás el <b>área</b>.</p></div>
+      </section>
+
+      <section class="area-content-section formulas-section" id="formulas" aria-labelledby="formulas-title">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">Herramientas para calcular</p>
+          <h2 id="formulas-title">Las fórmulas principales</h2>
+          <p>Una fórmula es un camino corto para hacer un cálculo que se repite.</p>
+        </div>
+        <div class="formula-grid">
+          <article class="formula-card square-formula">
+            <div class="formula-shape">
+              <svg viewBox="0 0 180 140" role="img" aria-label="Cuadrado de lado L"><rect x="35" y="15" width="105" height="105"/><text x="76" y="137">L</text><text x="12" y="74">L</text></svg>
+            </div>
+            <div class="formula-copy"><p class="eyebrow">Cuadrado</p><h3>Todos sus lados son iguales</h3><div class="formula-line"><span>Perímetro</span><strong>P = 4 × lado</strong></div><div class="formula-line"><span>Área</span><strong>A = lado × lado</strong></div><p class="worked-formula">Si el lado mide 5 cm: P = 20 cm y A = 25 cm².</p></div>
+          </article>
+          <article class="formula-card rectangle-formula">
+            <div class="formula-shape">
+              <svg viewBox="0 0 180 140" role="img" aria-label="Rectángulo de base B y altura H"><rect x="15" y="30" width="150" height="80"/><text x="85" y="132">B</text><text x="2" y="75">H</text></svg>
+            </div>
+            <div class="formula-copy"><p class="eyebrow">Rectángulo</p><h3>Lados opuestos iguales</h3><div class="formula-line"><span>Perímetro</span><strong>P = 2 × (base + altura)</strong></div><div class="formula-line"><span>Área</span><strong>A = base × altura</strong></div><p class="worked-formula">Base 6 cm y altura 3 cm: P = 18 cm y A = 18 cm².</p></div>
+          </article>
+          <article class="formula-card triangle-formula">
+            <div class="formula-shape">
+              <svg viewBox="0 0 180 140" role="img" aria-label="Triángulo de base B y altura H"><polygon points="90,10 165,115 15,115"/><line x1="90" y1="10" x2="90" y2="115"/><text x="86" y="136">B</text><text x="96" y="70">H</text></svg>
+            </div>
+            <div class="formula-copy"><p class="eyebrow">Triángulo</p><h3>Tres lados y tres vértices</h3><div class="formula-line"><span>Perímetro</span><strong>P = lado 1 + lado 2 + lado 3</strong></div><div class="formula-line"><span>Área</span><strong>A = (base × altura) ÷ 2</strong></div><p class="worked-formula">Base 8 cm y altura 4 cm: A = 16 cm².</p></div>
+          </article>
+        </div>
+        <div class="square-units-note"><span>cm</span><span>cm²</span><div><strong>¡No olvides la unidad!</strong><p>El perímetro usa unidades simples. El área usa unidades cuadradas porque cuenta cuántos cuadrados cubren la superficie.</p></div></div>
+      </section>
+
+      <section class="area-content-section area-practice-section" id="practica-area" aria-labelledby="area-practice-title">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">Ponelo en práctica</p>
+          <h2 id="area-practice-title">Desafío de área y perímetro</h2>
+          <p>Cada ronda combina cálculos, problemas cotidianos y preguntas de conceptos.</p>
+        </div>
+        <div class="area-practice-toolbar">
+          <div class="field-group"><label for="area-practice-type">Tipo de ejercicio</label><select id="area-practice-type"><option value="mixed">🎲 Todo mezclado</option><option value="area">▦ Solo área</option><option value="perimeter">□ Solo perímetro</option><option value="concept">💡 Solo conceptos</option></select></div>
+          <button class="button secondary" id="restart-area" type="button">Nueva ronda</button>
+        </div>
+
+        <article class="area-question-card" id="area-quiz">
+          <div class="geometry-progress"><span>Pregunta <strong id="area-current">1</strong> de 10</span><span><strong id="area-correct">0</strong> correctas</span></div>
+          <div class="progress-track"><span id="area-progress-bar"></span></div>
+          <div class="problem-badge" id="area-question-kind">Área</div>
+          <div class="problem-figure" id="area-problem-figure" aria-hidden="true"></div>
+          <h3 id="area-question-text"></h3>
+          <p class="problem-context" id="area-question-context"></p>
+          <div id="area-answer-zone"></div>
+          <div class="feedback" id="area-feedback" role="status" aria-live="polite" hidden></div>
+          <button class="button primary area-next" id="area-next" type="button" hidden>Siguiente ejercicio →</button>
+        </article>
+
+        <article class="area-result" id="area-result" hidden>
+          <div class="challenge-visual" aria-hidden="true">📐</div>
+          <p class="eyebrow">Ronda terminada</p><h3 id="area-result-title"></h3><p id="area-result-text"></p>
+          <button class="button primary" id="area-again" type="button">Hacer otra ronda</button>
+        </article>
+      </section>
+    </main>
+
+    <footer><span>MateMundo</span><p>Área y perímetro: medir, pensar y resolver.</p></footer>
+    <noscript>Necesitás activar JavaScript para resolver los ejercicios.</noscript>
+    <script type="module" src="js/area-perimetro.js"></script>
+  </body>
+</html>

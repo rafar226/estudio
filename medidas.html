@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Práctica de medidas y conversiones para estudiantes de primaria.">
+    <meta name="theme-color" content="#5b4bdb">
+    <title>MateMundo — Medidas y conversiones</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="MateMundo, todos los temas">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>MateMundo</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a class="nav-button nav-link" href="index.html">Todos los temas</a>
+        <button class="nav-button active" type="button" data-view="inicio">Medidas</button>
+        <button class="nav-button" type="button" data-view="aprender">Aprender</button>
+        <button class="nav-button" type="button" data-view="practicar">Practicar</button>
+        <button class="nav-button" type="button" data-view="convertir">Conversor</button>
+        <button class="nav-button" type="button" data-view="examen">Examen</button>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="view active" id="inicio" aria-labelledby="titulo-inicio">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Matemática para primaria</p>
+            <h1 id="titulo-inicio">Las medidas se aprenden <span>practicando</span></h1>
+            <p class="hero-text">Descubrí cómo pasar de metros a kilómetros, de litros a hectolitros y mucho más. A tu ritmo, con pistas y explicaciones sencillas.</p>
+            <div class="hero-actions">
+              <button class="button primary" type="button" data-go="practicar">Empezar a practicar</button>
+              <button class="button secondary" type="button" data-go="aprender">Ver la escalera métrica</button>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Ejemplo: un kilómetro equivale a mil metros">
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+            <div class="measure-card large-card">
+              <span class="measure-icon" aria-hidden="true">↔</span>
+              <strong>1 km</strong>
+              <span>es igual a</span>
+              <strong>1.000 m</strong>
+            </div>
+            <span class="float-badge badge-one">× 10</span>
+            <span class="float-badge badge-two">÷ 10</span>
+          </div>
+        </div>
+
+        <div class="stats" aria-label="Tu progreso">
+          <article><strong id="stat-resueltos">0</strong><span>ejercicios resueltos</span></article>
+          <article><strong id="stat-correctos">0</strong><span>respuestas correctas</span></article>
+          <article><strong id="stat-racha">0</strong><span>mejor racha</span></article>
+        </div>
+
+        <section class="section-block" aria-labelledby="elige-camino">
+          <div class="section-heading">
+            <div><p class="eyebrow">Elegí tu camino</p><h2 id="elige-camino">¿Qué querés hacer hoy?</h2></div>
+          </div>
+          <div class="path-grid">
+            <button class="path-card violet" type="button" data-go="aprender">
+              <span class="path-icon" aria-hidden="true">💡</span><strong>Aprender</strong><span>Repasá la escalera de unidades con ejemplos claros.</span><em>Ver explicación →</em>
+            </button>
+            <button class="path-card coral" type="button" data-go="practicar">
+              <span class="path-icon" aria-hidden="true">✏️</span><strong>Practicar</strong><span>Resolvé ejercicios, pedí pistas y aprendé de cada intento.</span><em>Ir a ejercicios →</em>
+            </button>
+            <button class="path-card teal" type="button" data-go="convertir">
+              <span class="path-icon" aria-hidden="true">⚖️</span><strong>Convertir</strong><span>Usá el conversor para comprobar cualquier medida.</span><em>Abrir conversor →</em>
+            </button>
+            <button class="path-card yellow" type="button" data-go="examen">
+              <span class="path-icon" aria-hidden="true">🏆</span><strong>Desafío final</strong><span>Completá un examen aleatorio y revisá tus resultados.</span><em>Comenzar examen →</em>
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="aprender" aria-labelledby="titulo-aprender">
+        <div class="page-intro">
+          <p class="eyebrow">Primero entendemos</p>
+          <h1 id="titulo-aprender">La escalera de las medidas</h1>
+          <p>Cada escalón cambia el valor 10 veces. Hacia una unidad más pequeña multiplicamos; hacia una más grande dividimos.</p>
+        </div>
+        <div class="learn-layout">
+          <aside class="topic-tabs" aria-label="Tipos de medidas" id="learn-topic-tabs"></aside>
+          <div>
+            <article class="lesson-card">
+              <div class="lesson-title"><span id="lesson-emoji" aria-hidden="true">📏</span><div><p class="eyebrow" id="lesson-kicker">Longitud</p><h2 id="lesson-title">Medimos distancias</h2></div></div>
+              <div class="unit-ladder" id="unit-ladder" aria-label="Escalera de unidades"></div>
+              <div class="direction-grid">
+                <div><span class="direction-arrow right">→</span><strong>Hacia la derecha</strong><p>Multiplicá por 10 en cada salto.</p></div>
+                <div><span class="direction-arrow left">←</span><strong>Hacia la izquierda</strong><p>Dividí por 10 en cada salto.</p></div>
+              </div>
+              <div class="worked-example" id="worked-example"></div>
+            </article>
+            <article class="tip-card"><span aria-hidden="true">🧠</span><div><strong>Truco para recordar</strong><p>Contá los saltos entre las unidades. Por cada salto mové la coma un lugar: a la derecha si multiplicás y a la izquierda si dividís.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="practicar" aria-labelledby="titulo-practicar">
+        <div class="page-intro compact-intro">
+          <p class="eyebrow">Entrenamiento</p>
+          <h1 id="titulo-practicar">Practicá paso a paso</h1>
+          <p>Elegí un tema. Los ejercicios cambian cada vez y podés pedir una pista.</p>
+        </div>
+        <div class="practice-toolbar">
+          <div class="field-group"><label for="practice-topic">Tema</label><select id="practice-topic"></select></div>
+          <div class="session-score"><span>Aciertos</span><strong><span id="practice-correct">0</span>/<span id="practice-total">0</span></strong></div>
+        </div>
+        <article class="exercise-card" id="practice-card">
+          <div class="exercise-meta">
+            <span class="topic-pill" id="practice-pill">Longitud</span>
+            <div class="exercise-meta-tools">
+              <span id="practice-level">Nivel: inicial</span>
+              <button class="measure-help-button" id="measure-help-button" type="button" aria-label="Ver ayuda memoria de las medidas" aria-haspopup="dialog" aria-controls="measure-help-dialog">i</button>
+            </div>
+          </div>
+          <p class="exercise-label">Completá la conversión</p>
+          <div class="exercise-question" id="practice-question"></div>
+          <form id="practice-form" novalidate>
+            <div class="answer-row">
+              <label class="sr-only" for="practice-answer">Tu respuesta</label>
+              <input id="practice-answer" type="text" inputmode="decimal" autocomplete="off" placeholder="Escribí el resultado">
+              <span class="answer-unit" id="practice-unit"></span>
+            </div>
+            <div class="exercise-actions">
+              <button class="button hint" id="hint-button" type="button">Necesito una pista</button>
+              <button class="button primary" type="submit">Comprobar</button>
+            </div>
+          </form>
+          <div class="hint-box" id="hint-box" hidden></div>
+          <div class="feedback" id="practice-feedback" role="status" aria-live="polite" hidden></div>
+          <button class="button primary next-button" id="next-practice" type="button" hidden>Siguiente ejercicio →</button>
+        </article>
+
+        <dialog class="measure-help-dialog" id="measure-help-dialog" aria-labelledby="measure-help-title">
+          <div class="measure-help-header">
+            <div><p class="eyebrow">Ayuda memoria</p><h2 id="measure-help-title">Orden de las medidas</h2></div>
+            <button class="dialog-close" id="close-measure-help" type="button" aria-label="Cerrar ayuda">×</button>
+          </div>
+          <p class="measure-help-topic" id="measure-help-topic"></p>
+          <div class="measure-help-flow" id="measure-help-flow" aria-label="Orden de unidades"></div>
+          <div class="measure-help-note" id="measure-help-note"></div>
+        </dialog>
+      </section>
+
+      <section class="view" id="convertir" aria-labelledby="titulo-convertir">
+        <div class="page-intro compact-intro">
+          <p class="eyebrow">Herramienta</p>
+          <h1 id="titulo-convertir">Conversor de medidas</h1>
+          <p>Probá valores y comprobá conversiones al instante.</p>
+        </div>
+        <article class="converter-card">
+          <div class="converter-top"><div class="field-group"><label for="converter-topic">¿Qué medimos?</label><select id="converter-topic"></select></div><button class="swap-button" id="swap-units" type="button" aria-label="Intercambiar unidades">⇄</button></div>
+          <div class="converter-grid">
+            <div class="convert-side"><label for="from-value">Desde</label><div class="convert-control"><input id="from-value" type="text" inputmode="decimal" value="1" aria-label="Valor de origen"><select id="from-unit" aria-label="Unidad de origen"></select></div></div>
+            <div class="equals" aria-hidden="true">=</div>
+            <div class="convert-side"><label for="to-value">Resultado</label><div class="convert-control result"><output id="to-value" aria-live="polite">1.000</output><select id="to-unit" aria-label="Unidad de destino"></select></div></div>
+          </div>
+          <div class="conversion-explanation" id="conversion-explanation"></div>
+        </article>
+      </section>
+
+      <section class="view" id="examen" aria-labelledby="titulo-examen">
+        <div class="page-intro compact-intro">
+          <p class="eyebrow">Desafío final</p>
+          <h1 id="titulo-examen">Examen aleatorio</h1>
+          <p>Mezcla distintos tipos de medidas. Al terminar vas a ver tu puntaje y qué conviene repasar.</p>
+        </div>
+        <div id="exam-setup" class="exam-setup">
+          <div class="challenge-visual" aria-hidden="true">🏅</div>
+          <h2>¿Listo para el desafío?</h2>
+          <p>Elegí cuántas preguntas querés resolver. No hay límite de tiempo.</p>
+          <div class="exam-options" role="group" aria-label="Cantidad de preguntas">
+            <button class="option-button" type="button" data-count="5">5<br><span>rápido</span></button>
+            <button class="option-button selected" type="button" data-count="10">10<br><span>completo</span></button>
+            <button class="option-button" type="button" data-count="15">15<br><span>gran desafío</span></button>
+          </div>
+          <button class="button primary wide" id="start-exam" type="button">Comenzar examen</button>
+        </div>
+
+        <article id="exam-running" class="exercise-card" hidden>
+          <div class="exam-progress-header"><strong>Pregunta <span id="exam-current">1</span> de <span id="exam-total">10</span></strong><span id="exam-topic-label"></span></div>
+          <div class="progress-track"><span id="exam-progress-bar"></span></div>
+          <p class="exercise-label">Convertí la medida</p>
+          <div class="exercise-question" id="exam-question"></div>
+          <form id="exam-form" novalidate>
+            <div class="answer-row"><label class="sr-only" for="exam-answer">Tu respuesta</label><input id="exam-answer" type="text" inputmode="decimal" autocomplete="off" placeholder="Escribí el resultado"><span class="answer-unit" id="exam-unit"></span></div>
+            <button class="button primary wide" type="submit">Guardar y continuar</button>
+          </form>
+        </article>
+
+        <div id="exam-result" class="result-card" hidden>
+          <div class="result-ring"><strong id="result-percent">0%</strong><span>resultado</span></div>
+          <h2 id="result-title">¡Buen trabajo!</h2>
+          <p id="result-summary"></p>
+          <div class="review-list" id="review-list"></div>
+          <div class="result-actions"><button class="button secondary" id="back-to-practice" type="button">Seguir practicando</button><button class="button primary" id="retry-exam" type="button">Intentar otro examen</button></div>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>MateMundo</span><p>Hecho para aprender jugando · Tu progreso se guarda en este dispositivo.</p></footer>
+    <noscript>Necesitás activar JavaScript para usar los ejercicios y el conversor.</noscript>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
