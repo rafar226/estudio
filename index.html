@@ -112,7 +112,13 @@
           <div class="session-score"><span>Aciertos</span><strong><span id="practice-correct">0</span>/<span id="practice-total">0</span></strong></div>
         </div>
         <article class="exercise-card" id="practice-card">
-          <div class="exercise-meta"><span class="topic-pill" id="practice-pill">Longitud</span><span id="practice-level">Nivel: inicial</span></div>
+          <div class="exercise-meta">
+            <span class="topic-pill" id="practice-pill">Longitud</span>
+            <div class="exercise-meta-tools">
+              <span id="practice-level">Nivel: inicial</span>
+              <button class="measure-help-button" id="measure-help-button" type="button" aria-label="Ver ayuda memoria de las medidas" aria-haspopup="dialog" aria-controls="measure-help-dialog">i</button>
+            </div>
+          </div>
           <p class="exercise-label">Completá la conversión</p>
           <div class="exercise-question" id="practice-question"></div>
           <form id="practice-form" novalidate>
@@ -130,6 +136,16 @@
           <div class="feedback" id="practice-feedback" role="status" aria-live="polite" hidden></div>
           <button class="button primary next-button" id="next-practice" type="button" hidden>Siguiente ejercicio →</button>
         </article>
+
+        <dialog class="measure-help-dialog" id="measure-help-dialog" aria-labelledby="measure-help-title">
+          <div class="measure-help-header">
+            <div><p class="eyebrow">Ayuda memoria</p><h2 id="measure-help-title">Orden de las medidas</h2></div>
+            <button class="dialog-close" id="close-measure-help" type="button" aria-label="Cerrar ayuda">×</button>
+          </div>
+          <p class="measure-help-topic" id="measure-help-topic"></p>
+          <div class="measure-help-flow" id="measure-help-flow" aria-label="Orden de unidades"></div>
+          <div class="measure-help-note" id="measure-help-note"></div>
+        </dialog>
       </section>
 
       <section class="view" id="convertir" aria-labelledby="titulo-convertir">

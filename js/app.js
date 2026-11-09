@@ -131,7 +131,21 @@ function renderPracticeQuestion() {
   $("#practice-feedback").hidden = true;
   $("#next-practice").hidden = true;
   $("#practice-form button[type='submit']").disabled = false;
+  renderMeasureHelp();
   $("#practice-answer").focus();
+}
+
+function renderMeasureHelp() {
+  const { topic, from, to } = practiceQuestion;
+  $("#measure-help-topic").textContent = `${topic.emoji} ${topic.name}: de la unidad más grande a la más pequeña.`;
+  $("#measure-help-flow").innerHTML = topic.units.map((unit, index) => {
+    const classes = ["help-unit", unit.id === from.id ? "from" : "", unit.id === to.id ? "to" : ""].filter(Boolean).join(" ");
+    const unitBlock = `<div class="${classes}"><strong>${unit.id}</strong><small>${unit.name}</small></div>`;
+    return index < topic.units.length - 1 ? `${unitBlock}<span class="help-arrow" aria-hidden="true">›</span>` : unitBlock;
+  }).join("");
+  $("#measure-help-note").innerHTML = topic.nonMetric
+    ? `<strong>Recordá:</strong> el tiempo no avanza de 10 en 10. 1 día = 24 h, 1 h = 60 min y 1 min = 60 s.`
+    : `<strong>Regla rápida:</strong> hacia la derecha multiplicamos por 10 en cada salto; hacia la izquierda dividimos por 10.`;
 }
 
 $("#practice-form").addEventListener("submit", (event) => {
@@ -169,6 +183,13 @@ $("#hint-button").addEventListener("click", () => {
 });
 $("#next-practice").addEventListener("click", renderPracticeQuestion);
 $("#practice-topic").addEventListener("change", renderPracticeQuestion);
+
+const measureHelpDialog = $("#measure-help-dialog");
+$("#measure-help-button").addEventListener("click", () => measureHelpDialog.showModal());
+$("#close-measure-help").addEventListener("click", () => measureHelpDialog.close());
+measureHelpDialog.addEventListener("click", (event) => {
+  if (event.target === measureHelpDialog) measureHelpDialog.close();
+});
 
 // Conversor
 function fillUnitSelects(topicKey, preferredFrom, preferredTo) {
