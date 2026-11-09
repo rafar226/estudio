@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Figuras geométricas y tipos de ángulos para estudiantes de primaria.">
+    <meta name="theme-color" content="#5b4bdb">
+    <title>MateMundo — Figuras geométricas y ángulos</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="geometry-page">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="MateMundo, volver al inicio">
+        <span class="brand-mark" aria-hidden="true">M</span><span>MateMundo</span>
+      </a>
+      <nav aria-label="Navegación de geometría">
+        <a class="nav-button nav-link" href="index.html">Medidas</a>
+        <a class="nav-button nav-link active" href="#figuras">Figuras</a>
+        <a class="nav-button nav-link" href="#angulos">Ángulos</a>
+        <a class="nav-button nav-link" href="#practica">Practicar</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="geometry-hero">
+        <div>
+          <p class="eyebrow">Geometría para primaria</p>
+          <h1>Descubrí el mundo de las <span>figuras</span></h1>
+          <p>Aprendé a reconocer lados, vértices y ángulos. Compará cada figura y después comprobá cuánto sabés con preguntas de opción múltiple.</p>
+          <a class="button primary button-link" href="#figuras">Empezar a aprender</a>
+        </div>
+        <div class="geometry-hero-art" aria-hidden="true">
+          <span class="art-square"></span><span class="art-triangle"></span><span class="art-circle"></span><span class="art-line"></span>
+        </div>
+      </section>
+
+      <section class="geometry-section" id="figuras" aria-labelledby="figuras-title">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">Conocé sus características</p>
+          <h2 id="figuras-title">Las cinco figuras principales</h2>
+          <p>Los lados son las líneas que forman una figura. Los vértices son los puntos donde se encuentran dos lados.</p>
+        </div>
+
+        <div class="shape-grid">
+          <article class="shape-card" style="--shape-color:#ff756b; --shape-soft:#fff0ee">
+            <div class="shape-drawing">
+              <svg viewBox="0 0 120 100" role="img" aria-label="Triángulo"><polygon points="60,8 108,90 12,90"/></svg>
+            </div>
+            <h3>Triángulo</h3>
+            <div class="shape-numbers"><span><strong>3</strong> lados</span><span><strong>3</strong> vértices</span></div>
+            <p>Tiene tres lados. La suma de sus ángulos interiores siempre es 180°.</p>
+          </article>
+
+          <article class="shape-card" style="--shape-color:#5b4bdb; --shape-soft:#efedff">
+            <div class="shape-drawing">
+              <svg viewBox="0 0 120 100" role="img" aria-label="Cuadrado"><rect x="18" y="8" width="84" height="84"/></svg>
+            </div>
+            <h3>Cuadrado</h3>
+            <div class="shape-numbers"><span><strong>4</strong> lados</span><span><strong>4</strong> vértices</span></div>
+            <p>Sus cuatro lados son iguales y sus cuatro ángulos son rectos.</p>
+          </article>
+
+          <article class="shape-card" style="--shape-color:#21a99a; --shape-soft:#e6f7f4">
+            <div class="shape-drawing">
+              <svg viewBox="0 0 120 100" role="img" aria-label="Rectángulo"><rect x="8" y="22" width="104" height="60"/></svg>
+            </div>
+            <h3>Rectángulo</h3>
+            <div class="shape-numbers"><span><strong>4</strong> lados</span><span><strong>4</strong> vértices</span></div>
+            <p>Sus lados opuestos son iguales y tiene cuatro ángulos rectos.</p>
+          </article>
+
+          <article class="shape-card" style="--shape-color:#e49a16; --shape-soft:#fff6d8">
+            <div class="shape-drawing">
+              <svg viewBox="0 0 120 100" role="img" aria-label="Rombo"><polygon points="60,5 108,50 60,95 12,50"/></svg>
+            </div>
+            <h3>Rombo</h3>
+            <div class="shape-numbers"><span><strong>4</strong> lados</span><span><strong>4</strong> vértices</span></div>
+            <p>Sus cuatro lados son iguales, pero sus ángulos no tienen que ser rectos.</p>
+          </article>
+
+          <article class="shape-card" style="--shape-color:#d45c93; --shape-soft:#fcecf4">
+            <div class="shape-drawing">
+              <svg viewBox="0 0 120 100" role="img" aria-label="Trapecio"><polygon points="35,15 85,15 110,88 10,88"/></svg>
+            </div>
+            <h3>Trapecio</h3>
+            <div class="shape-numbers"><span><strong>4</strong> lados</span><span><strong>4</strong> vértices</span></div>
+            <p>Tiene un par de lados paralelos: aunque se extiendan, nunca se cruzan.</p>
+          </article>
+        </div>
+
+        <article class="compare-card">
+          <div><p class="eyebrow">Una diferencia importante</p><h3>¿Cuadrado, rectángulo o rombo?</h3></div>
+          <div class="compare-grid">
+            <p><span class="compare-symbol square-symbol"></span><strong>Cuadrado</strong> 4 lados iguales + 4 ángulos rectos.</p>
+            <p><span class="compare-symbol rectangle-symbol"></span><strong>Rectángulo</strong> lados opuestos iguales + 4 ángulos rectos.</p>
+            <p><span class="compare-symbol rhombus-symbol"></span><strong>Rombo</strong> 4 lados iguales + ángulos opuestos iguales.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="geometry-section angle-section" id="angulos" aria-labelledby="angulos-title">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">Cuando dos líneas se encuentran</p>
+          <h2 id="angulos-title">Tipos de ángulos</h2>
+          <p>Un ángulo mide cuánto gira una línea respecto de otra. Se mide en grados y usamos el símbolo °.</p>
+        </div>
+        <div class="angle-grid">
+          <article class="angle-card acute">
+            <div class="angle-picture"><span class="ray horizontal"></span><span class="ray diagonal acute-ray"></span><i></i></div>
+            <span class="degree-badge">menos de 90°</span><h3>Ángulo agudo</h3><p>Es más pequeño que un ángulo recto.</p>
+          </article>
+          <article class="angle-card right-angle">
+            <div class="angle-picture"><span class="ray horizontal"></span><span class="ray vertical"></span><i></i></div>
+            <span class="degree-badge">exactamente 90°</span><h3>Ángulo recto</h3><p>Se parece a la esquina de una hoja.</p>
+          </article>
+          <article class="angle-card obtuse">
+            <div class="angle-picture"><span class="ray horizontal"></span><span class="ray diagonal obtuse-ray"></span><i></i></div>
+            <span class="degree-badge">entre 90° y 180°</span><h3>Ángulo obtuso</h3><p>Es más abierto que un ángulo recto.</p>
+          </article>
+          <article class="angle-card straight">
+            <div class="angle-picture"><span class="ray straight-ray"></span><i></i></div>
+            <span class="degree-badge">exactamente 180°</span><h3>Ángulo llano</h3><p>Forma una línea recta.</p>
+          </article>
+        </div>
+        <div class="angle-memory"><span aria-hidden="true">💡</span><p><strong>Ayuda memoria:</strong> agudo es pequeño, recto forma una esquina, obtuso es más abierto y llano forma una línea.</p></div>
+      </section>
+
+      <section class="geometry-section practice-geometry" id="practica" aria-labelledby="geometry-practice-title">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">Ahora te toca</p>
+          <h2 id="geometry-practice-title">Desafío de geometría</h2>
+          <p>Completá una ronda de 10 preguntas. Las opciones y el orden cambian en cada intento.</p>
+        </div>
+
+        <div class="geometry-practice-toolbar">
+          <div class="field-group"><label for="geometry-topic">Preguntas sobre</label><select id="geometry-topic"><option value="mixed">🎲 Todo mezclado</option><option value="shapes">🔷 Figuras</option><option value="angles">📐 Ángulos</option></select></div>
+          <button class="button secondary" id="restart-geometry" type="button">Nueva ronda</button>
+        </div>
+
+        <article class="geometry-question-card" id="geometry-quiz">
+          <div class="geometry-progress"><span>Pregunta <strong id="geometry-current">1</strong> de 10</span><span><strong id="geometry-correct">0</strong> correctas</span></div>
+          <div class="progress-track"><span id="geometry-progress-bar"></span></div>
+          <div class="question-visual" id="question-visual" aria-hidden="true">◆</div>
+          <span class="topic-pill" id="geometry-question-topic">Figuras</span>
+          <h3 id="geometry-question">¿Cuántos lados tiene un triángulo?</h3>
+          <div class="choice-grid" id="geometry-choices" role="group" aria-labelledby="geometry-question"></div>
+          <div class="feedback" id="geometry-feedback" role="status" aria-live="polite" hidden></div>
+          <button class="button primary geometry-next" id="geometry-next" type="button" hidden>Siguiente pregunta →</button>
+        </article>
+
+        <article class="geometry-result" id="geometry-result" hidden>
+          <div class="challenge-visual" aria-hidden="true">🏆</div>
+          <p class="eyebrow">Ronda terminada</p>
+          <h3 id="geometry-result-title">¡Excelente!</h3>
+          <p id="geometry-result-text"></p>
+          <button class="button primary" id="geometry-again" type="button">Jugar otra ronda</button>
+        </article>
+      </section>
+    </main>
+
+    <footer><span>MateMundo</span><p>Geometría para aprender observando, comparando y jugando.</p></footer>
+    <noscript>Necesitás activar JavaScript para resolver las preguntas.</noscript>
+    <script type="module" src="js/geometria.js"></script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # MateMundo
 
-Aplicación web educativa de matemática para primaria. Incluye explicación de unidades, ejercicios con pistas, conversor y exámenes aleatorios.
+Aplicación web educativa de matemática para primaria. Incluye medidas y conversiones, figuras geométricas, ángulos, ejercicios con pistas y desafíos aleatorios.
 
 ## Abrir en tu computadora
 
@@ -22,6 +22,8 @@ Los tipos de medidas están definidos en `js/data.js`. Al agregar otro bloque al
 La interfaz está separada así:
 
 - `index.html`: estructura y textos.
+- `geometria.html`: módulo independiente de figuras y ángulos.
 - `css/styles.css`: diseño adaptable.
 - `js/data.js`: temas, unidades y factores.
 - `js/app.js`: navegación, ejercicios, conversor, examen y progreso local.
+- `js/geometria.js`: preguntas y comportamiento del módulo de geometría.

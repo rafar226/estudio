@@ -50,6 +50,7 @@ export const topics = {
     ]
   },
   time: {
+    enabled: false,
     name: "Tiempo",
     emoji: "⏱️",
     title: "Medimos duraciones",

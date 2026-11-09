@@ -2,7 +2,8 @@ import { topics, questionValues } from "./data.js";
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
-const topicEntries = Object.entries(topics);
+const topicEntries = Object.entries(topics).filter(([, topic]) => topic.enabled !== false);
+const topicKeys = topicEntries.map(([key]) => key);
 
 const parseNumber = (value) => {
   const cleaned = String(value).trim().replace(/\s/g, "");
@@ -93,7 +94,7 @@ function convert(value, topicKey, fromId, toId) {
   return value * getUnit(topicKey, fromId).factor / getUnit(topicKey, toId).factor;
 }
 
-function createQuestion(topicKey = randomFrom(Object.keys(topics))) {
+function createQuestion(topicKey = randomFrom(topicKeys)) {
   const topic = topics[topicKey];
   let fromIndex = Math.floor(Math.random() * topic.units.length);
   let toIndex = Math.floor(Math.random() * topic.units.length);
@@ -242,7 +243,7 @@ $$('[data-count]').forEach((button) => button.addEventListener("click", () => {
 }));
 
 function startExam() {
-  examQuestions = Array.from({ length: examCount }, (_, index) => createQuestion(Object.keys(topics)[index % topicEntries.length]));
+  examQuestions = Array.from({ length: examCount }, (_, index) => createQuestion(topicKeys[index % topicEntries.length]));
   examQuestions.sort(() => Math.random() - 0.5);
   examAnswers = [];
   examIndex = 0;
